@@ -13,3 +13,20 @@ new Swiper('.text-slider',{
         },
         speed:1000,
 });
+
+
+//время для темной темы
+
+
+function getTimeOfDay(){
+
+    const date = new Date();
+    const hours = date.getHours();  
+
+     if(hours>=18 && hours<24){
+        document.body.style.backgroundColor = "black";
+
+    }
+
+}
+getTimeOfDay();

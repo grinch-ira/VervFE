@@ -78,6 +78,7 @@
   }
   
   body {
+
     height: 100%;
     line-height: 1;
     font-family: Montserrat;
@@ -86,14 +87,20 @@
   }
   /*Конец обнуления*/
 @media(min-width:320px){
+  main{
+
+  }
 .wrapper{
 overflow: hidden;
     min-width: 320px;
     font-family: "SF Pro Text",-apple-system, BlinkMacSystemFont, sans-serif;
     color: #FFFFFF;
     .header{
+      position: relative;
+      content: '';
+      z-index: 5;
         height: 262px;
-        background:linear-gradient(225deg, #894AC9 0%, #4D46B1 100%);;
+        background:linear-gradient(225deg, #894AC9 0%, #4D46B1 100%);
     .header__title{
         padding:46px 26px 5px 43px;
         font-size: 24px;
@@ -126,6 +133,9 @@ overflow: hidden;
 
 
 .text-slider {
+  position: relative;
+  content: '';
+  z-index: 6;
     margin-top: -55px;
     margin-bottom: 6px;
 
@@ -137,7 +147,7 @@ overflow: hidden;
     height: 111px;
     padding: 15px;
     background: #F3F2F9;
-    backdrop-filter: blur(9.06094px);
+    // backdrop-filter: blur(9.06094px);
     border-radius: 10px;
     min-width: 280px;
     color: #1a1a1a;
