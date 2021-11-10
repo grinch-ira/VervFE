@@ -19,13 +19,23 @@ new Swiper('.text-slider',{
 
 
 function getTimeOfDay(){
-
+    const textSliderComments = document.querySelector('.text-slider__comments')
+    const priceBlock1 = document.querySelector('.price__block1')
+    const priceBlock2 = document.querySelector('.price__block2')
+    const priceBlock3 = document.querySelector('.price__block3')
+    const priceWrapper = document.querySelector('.price-wrapper')
+    const footerText = document.querySelector('.footer-text')
     const date = new Date();
     const hours = date.getHours();  
-
-     if(hours>=18 && hours<24){
+     if(hours>=15 && hours<24){
         document.body.style.backgroundColor = "black";
-
+        priceBlock1.style.backgroundColor = '#373640';
+        priceBlock2.style.backgroundColor = '#373640';
+        priceBlock3.style.backgroundColor = '#373640';
+        priceWrapper.style.color = "white";
+        footerText.style.color = '#7D7D80';
+        textSliderComments.style.background = 'linear-gradient(225deg, #262526 0%, #19181A 100%)';
+        textSliderComments.style.color = '#ffffff'
     }
 
 }

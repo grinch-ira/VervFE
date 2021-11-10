@@ -186,7 +186,6 @@ body {
     margin-top: 9px;
     font-size: 13px;
     line-height: 16px;
-    color: #1A1A1A;
   }
   .price-container {
     margin: 0px 20px 13px 20px;
@@ -200,12 +199,12 @@ body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    color: #1A1A1A;
   }
   .price-container .title {
     font-size: 20px;
     line-height: 23px;
     text-align: center;
-    color: #1A1A1A;
   }
   .price-container .price {
     padding: 5px 0 3px 0;
@@ -225,7 +224,6 @@ body {
     background: #F3F2F9;
     -webkit-backdrop-filter: blur(9.06094px);
             backdrop-filter: blur(9.06094px);
-    color: #1A1A1A;
   }
   .save {
     height: 21px;
@@ -239,7 +237,6 @@ body {
     text-align: center;
     letter-spacing: 0.66px;
     text-transform: uppercase;
-    color: #1A1A1A;
     padding: 3px 12.5px 0 13.5px;
   }
   .price__block2 {
@@ -254,7 +251,6 @@ body {
     background: #F3F2F9;
     -webkit-backdrop-filter: blur(9.06094px);
             backdrop-filter: blur(9.06094px);
-    color: #1A1A1A;
   }
   .all {
     height: 112px;
@@ -275,7 +271,6 @@ body {
     background: #F3F2F9;
     -webkit-backdrop-filter: blur(9.06094px);
             backdrop-filter: blur(9.06094px);
-    color: #1A1A1A;
   }
   .block3__sale {
     border-radius: 0 0 5px 5px;
@@ -289,7 +284,6 @@ body {
     text-align: center;
     letter-spacing: 0.42px;
     text-transform: uppercase;
-    color: #1A1A1A;
   }
   .blick3__all {
     height: 97px;
