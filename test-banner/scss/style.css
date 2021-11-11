@@ -134,7 +134,10 @@ body {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .header-information .header-sportswoman {
+  .header-sportswoman {
+    margin-top: -30px;
+    width: 53px;
+    height: 157px;
     padding-left: 60px;
     padding-right: 28px;
     background-image: url("../assets/svg/Bitmap.svg");
@@ -209,14 +212,13 @@ body {
   .price-container .price {
     padding: 5px 0 3px 0;
   }
-  .price-container .price__block1 {
+  .price-container .price-label {
     -ms-flex-item-align: end;
         align-self: flex-end;
+  }
+  .price-container .price__block1 {
     border-radius: 5px;
     height: 112px;
-    padding: 4px 6px 23px 6px;
-    font-style: normal;
-    font-weight: normal;
     font-size: 11px;
     line-height: 13px;
     text-align: center;
@@ -224,6 +226,32 @@ body {
     background: #F3F2F9;
     -webkit-backdrop-filter: blur(9.06094px);
             backdrop-filter: blur(9.06094px);
+  }
+  .price-container .price-radio {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+  .price-container .blick1__all {
+    margin: 4px 6px 23px 6px;
+  }
+  .price-label:hover {
+    cursor: pointer;
+  }
+  .price-label:hover .price__block1, .price-label:hover .blick2__all, .price-label:hover .blick3__all, .price-radio:checked .price__block1, .price-radio:checked .blick2__all, .price-radio:checked .blick3__all {
+    color: #ffffff;
+    background: linear-gradient(225deg, #894AC9 0%, #4D46B1 100%);
+    -webkit-backdrop-filter: blur(9.06094px);
+            backdrop-filter: blur(9.06094px);
+  }
+  .price-radio:checked ~ .price__block1, .price-radio:checked ~ .price__block2, .price-radio:checked ~ .price__block3 {
+    color: #ffffff;
+    background: linear-gradient(225deg, #894AC9 0%, #4D46B1 100%);
+    -webkit-backdrop-filter: blur(9.06094px);
+            backdrop-filter: blur(9.06094px);
+  }
+  .price-radio:checked ~ .price__block1 .save, .price-radio:checked ~ .price__block1 .block3__sale, .price-radio:checked ~ .price__block2 .save, .price-radio:checked ~ .price__block2 .block3__sale, .price-radio:checked ~ .price__block3 .save, .price-radio:checked ~ .price__block3 .block3__sale {
+    color: #000;
   }
   .save {
     height: 21px;
@@ -238,6 +266,9 @@ body {
     letter-spacing: 0.66px;
     text-transform: uppercase;
     padding: 3px 12.5px 0 13.5px;
+  }
+  .blick2__all {
+    border-radius: 0 0 5px 5px;
   }
   .price__block2 {
     border-radius: 5px;
@@ -254,6 +285,9 @@ body {
   }
   .all {
     height: 112px;
+  }
+  .block3 {
+    border-radius: 5px;
   }
   .block3__save {
     background: #FCA759;
@@ -326,10 +360,12 @@ body {
     height: 419px;
   }
   .wrapper .header .header__title {
-    padding: 80px 64px 20px 67px;
+    width: 251px;
+    padding: 0px;
+    padding-top: 80px;
+    margin: 0 0 36px 67px;
     font-size: 34px;
     line-height: 121%;
-    text-align: center;
     letter-spacing: 0.37px;
   }
   .wrapper .header .header-list {
@@ -337,6 +373,15 @@ body {
   }
   .wrapper .header .header-list .header-list__item:not(:last-child) {
     padding-bottom: 31px;
+  }
+  .header-sportswoman {
+    margin-top: -50px;
+    margin-left: -26px;
+    width: 110px;
+    height: 240px;
+    padding-left: 60px;
+    padding-right: 28px;
+    background: url("../assets/svg/Bitmap2.svg") no-repeat;
   }
   .text-slider {
     margin-top: -72px;
@@ -436,13 +481,22 @@ body {
     height: 471px;
   }
   .wrapper .header .header__title {
-    padding: 80px 80px 33px 86px;
+    margin-left: 86px;
+    margin-bottom: 50px;
   }
   .wrapper .header .header-list {
     padding-left: 33px;
   }
   .wrapper .header .header-list .header-list__item:not(:last-child) {
     padding-bottom: 33px;
+  }
+  .header-sportswoman {
+    margin-top: -60px;
+    width: 120px;
+    height: 280px;
+    padding-left: 60px;
+    padding-right: 28px;
+    background: url("../assets/svg/Bitmap3.svg") no-repeat;
   }
   .text-slider {
     margin-top: -78px;

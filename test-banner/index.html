@@ -69,15 +69,21 @@
     </div>
     <div class="price-container">
         <div class="price-wrapper">
-
+            <!-- <input type="radio" class = 'radio-button' name="radio" value="radio1"></input> -->
+            <label class="price-label">
+                <input type="radio" class="price-radio" name="plan" id="radio1" data-url = "https://www.google.com/search?q=1" >
             <div class="price__block1">
                 <div class="blick1__all all">
                 <div class="block1__title title">1<br>month</div>
                 <div class="block1__price price">$14.99 /<br>month</div>
                 <div class="block1__everymonths everymonths">month: $14.99</div>
-                </div>
             </div>
-            <div class="price__block2">
+        </div>
+    </label>
+        <!-- <input type="radio" class = 'radio-button' name="radio" value="radio2"></input> -->
+        <label class="price-label">  
+            <input type="radio" class="price-radio" name="plan" id="radio2" data-url = "https://www.google.com/search?q=2">  
+        <div class="price__block2">
                 <div class="block2">
                     <div class="block2__save save">SAVE 80%</div>
                     <div class="blick2__all all">
@@ -87,6 +93,11 @@
                     </div>
                 </div>
             </div>
+        </label>
+
+            <!-- <input type="radio" class = 'radio-button' name="radio" value="radio3"></input> -->
+            <label class="price-label">  
+                <input type="radio" class="price-radio" name="plan" id="radio3 " data-url = "https://www.google.com/search?q=3"> 
             <div class="price__block3">
                 <div class="block3">
                     <div class="block3__save save">SAVE 80%</div>
@@ -99,13 +110,16 @@
                     <div class="block3__sale">sale</div>
                 </div>
             </div>
+        </label>
+
 
         </div>
     </div>
 
     <div class="continue__button">
-        <a href="#" class="continue__text__button" target="blank"
-          >Continue</a>
+
+        <a href="#" onclick="document.location.href = chooseLink();" class="continue__text__button" target="blank"
+          > Continue</a>
       </div>
       <footer>
         <div class="footer-text">Recurring billing. Cancel anytime.</div>
