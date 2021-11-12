@@ -118,29 +118,67 @@ body {
     text-align: center;
     letter-spacing: 0.261176px;
   }
+  .wrapper .header .header-information {
+    margin-top: -10px;
+  }
   .wrapper .header .header-list {
+    position: relative;
     font-size: 12px;
     line-height: 14px;
     padding-left: 20px;
   }
-  .wrapper .header .header-list .header-list__item:not(:last-child) {
-    padding-bottom: 12px;
+  .white__line {
+    margin: 5px 0;
+    height: 1px;
+    background: linear-gradient(45deg, #916bb3, #b0a2b6);
+    mix-blend-mode: overlay;
+    opacity: 0.76;
+    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
   .header-information {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    position: relative;
   }
   .header-sportswoman {
-    margin-top: -30px;
-    width: 53px;
+    position: absolute;
+    width: 80px;
     height: 157px;
-    padding-left: 60px;
-    padding-right: 28px;
+    left: 160px;
+    right: 28px;
+    top: -35px;
     background-image: url("../assets/svg/Bitmap.svg");
+  }
+  .header-rate {
+    position: absolute;
+    width: 51px;
+    height: 99px;
+    top: 0;
+    right: 20px;
+  }
+  .free-down {
+    position: relative;
+  }
+  .free-text {
+    position: absolute;
+    margin-top: -23px;
+    margin-left: 8px;
+    color: #000;
+  }
+  .free-circle {
+    padding-left: 12px;
+  }
+  .pro-up {
+    position: relative;
+  }
+  .pro-text {
+    position: absolute;
+    margin-top: -23px;
+    margin-left: 10px;
+    color: #000;
+    text-transform: uppercase;
+  }
+  .pro-circle {
+    padding-left: 12px;
   }
   .text-slider {
     position: relative;
@@ -363,25 +401,34 @@ body {
     width: 251px;
     padding: 0px;
     padding-top: 80px;
-    margin: 0 0 36px 67px;
+    margin: 0 0 30px 67px;
     font-size: 34px;
     line-height: 121%;
     letter-spacing: 0.37px;
   }
   .wrapper .header .header-list {
+    margin-top: -10px;
+    height: 167px;
     padding-left: 16px;
   }
-  .wrapper .header .header-list .header-list__item:not(:last-child) {
-    padding-bottom: 31px;
+  .white__line {
+    margin: 15px 0;
   }
   .header-sportswoman {
-    margin-top: -50px;
-    margin-left: -26px;
-    width: 110px;
+    position: absolute;
+    width: 115px;
     height: 240px;
-    padding-left: 60px;
-    padding-right: 28px;
-    background: url("../assets/svg/Bitmap2.svg") no-repeat;
+    left: 160px;
+    right: 28px;
+    top: -35px;
+    background-image: url("../assets/svg/Bitmap2.svg");
+  }
+  .header-rate {
+    top: 24px;
+    right: 30px;
+  }
+  .free-circle {
+    margin-bottom: 35px;
   }
   .text-slider {
     margin-top: -72px;
@@ -487,16 +534,24 @@ body {
   .wrapper .header .header-list {
     padding-left: 33px;
   }
-  .wrapper .header .header-list .header-list__item:not(:last-child) {
-    padding-bottom: 33px;
+  .white__line {
+    margin: 15px 0;
   }
   .header-sportswoman {
-    margin-top: -60px;
-    width: 120px;
-    height: 280px;
-    padding-left: 60px;
-    padding-right: 28px;
-    background: url("../assets/svg/Bitmap3.svg") no-repeat;
+    position: absolute;
+    width: 140px;
+    height: 275px;
+    left: 180px;
+    right: 28px;
+    top: -48px;
+    background-image: url("../assets/svg/Bitmap3.svg");
+  }
+  .header-rate {
+    top: 24px;
+    right: 12px;
+  }
+  .free-circle {
+    margin-bottom: 45px;
   }
   .text-slider {
     margin-top: -78px;

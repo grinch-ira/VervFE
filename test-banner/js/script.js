@@ -67,5 +67,5 @@ function chooseLink(){
 
 }
 
-console.log(chooseLink())
+
 
