@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test-banner</title>
+
+    <link rel="stylesheet" href="../test-banner/scss/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+</head>
+<body>
+<div class="wrapper">
+    <header class="header">
+        <div class="header__title">Try Verv for free</div>
+        <div class="header-information">
+        <ul class="header-list">
+            <div class="white__line"></div>
+            <li class="header-list__item">Extr. Obese</li>
+            <div class="white__line"></div>
+            <li class="header-list__item">Obese</li>
+            <div class="white__line"></div>
+            <li class="header-list__item">Overweight</li>
+            <div class="white__line"></div>
+            <li class="header-list__item">Healthy</li>
+            <div class="white__line"></div>
+        </ul>
+        <div class="header-sportswoman"></div>
+        <div class="header-rate">
+            <div class="rate-free">
+                <div class="free-down"><img src="/VervFE/test-banner/assets/svg/RectangleCopy.svg" alt="">
+                <div class="free-text">Free</div></div>
+                <div class="free-circle"><img src="/VervFE/test-banner/assets/svg/Rectangle1.svg" alt=""></div>
+            </div>
+            <div class="rate-pro">
+                <div class="pro-up"><img src="/VervFE/test-banner/assets/svg/RectangleCopy.svg" alt="">                <div class="pro-text">pro</div></div>
+                <div class="pro-circle"><img src="/VervFE/test-banner/assets/svg/Rectangle2.svg" alt=""></div>
+            </div>
+        </div>
+        </div>
+    </header>
+    <main>
+    <div class=" text-slider swiper-container">
+        <div class="text-slider__wrapper swiper-wrapper">
+            <div class=" text-slider__slide swiper-slide">
+                <div class="text-slider__comments">
+                <div class="slide-text">
+                    <div class="text-title">Great app!</div>
+                    <div class="text-name">Therealtierra</div>
+                </div>
+                <div class="slide-grade"></div>
+                <div class="slide-comment">I'm on my 9th week and my body has changed tremendously!</div>
+            
+            </div>
+            </div>
+            <div class="text-slider__slide swiper-slide">
+                <div class="text-slider__comments">
+                <div class="slide-text">
+                    <div class="text-title">Fantastic!</div>
+                    <div class="text-name">lila_lane</div>
+                </div>
+                <div class="slide-grade"></div>
+                <div class="slide-comment">I can say I am 💯 happy with this app. 15 pounds off in 30 days!</div>
+            </div>
+            </div>
+            <div class="text-slider__slide swiper-slide">
+                <div class="text-slider__comments">
+                <div class="slide-text">
+                    <div class="text-title">It works!</div>
+                    <div class="text-name">tenniagirl</div>
+                </div>
+                <div class="slide-grade"></div>
+                <div class="slide-comment">Just finished the program.. Love it. Down 33lbs!!</div>
+            </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="price-container">
+        <div class="price-wrapper">
+            <!-- <input type="radio" class = 'radio-button' name="radio" value="radio1"></input> -->
+            <label class="price-label">
+                <input type="radio" class="price-radio" name="plan" id="radio1" data-url = "https://www.google.com/search?q=1" >
+            <div class="price__block1">
+                <div class="blick1__all all">
+                <div class="block1__title title">1<br>month</div>
+                <div class="block1__price price">$14.99 /<br>month</div>
+                <div class="block1__everymonths everymonths">month: $14.99</div>
+            </div>
+        </div>
+    </label>
+        <!-- <input type="radio" class = 'radio-button' name="radio" value="radio2"></input> -->
+        <label class="price-label">  
+            <input type="radio" class="price-radio" name="plan" id="radio2" data-url = "https://www.google.com/search?q=2">  
+        <div class="price__block2">
+                <div class="block2">
+                    <div class="block2__save save">SAVE 80%</div>
+                    <div class="blick2__all all">
+                    <div class="block2__title title">12<br>months</div>
+                    <div class="block2__price price">$39.99 <br>  per year</div>
+                    <div class="block2__everymonths everymonths">month: $3.33</div>
+                    </div>
+                </div>
+            </div>
+        </label>
+
+            <!-- <input type="radio" class = 'radio-button' name="radio" value="radio3"></input> -->
+            <label class="price-label">  
+                <input type="radio" class="price-radio" name="plan" id="radio3 " data-url = "https://www.google.com/search?q=3"> 
+            <div class="price__block3">
+                <div class="block3">
+                    <div class="block3__save save">SAVE 80%</div>
+                    <div class="blick3__all all">
+                    <div class="block3__title title">3<br>months</div>
+                    <div class="block3__price price">$29.99 /<br>3 month</div>
+                    <div class="block3__everymonths everymonths">month: $9.99</div>
+
+                    </div>
+                    <div class="block3__sale">sale</div>
+                </div>
+            </div>
+        </label>
+
+
+        </div>
+    </div>
+
+    <div class="continue__button">
+
+        <a href="" target="blank" onclick="document.location.href = chooseLink();" class="continue__text__button" > Continue</a>
+      </div>
+      <footer>
+        <div class="footer-text">Recurring billing. Cancel anytime.</div>
+    </footer>
+
+    </main>
+
+</div>
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script src="../test-banner/js/script.js"></script>
+</body>
+</html>
